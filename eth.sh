@@ -18,4 +18,4 @@ conda activate $MINICONDA_ENV
 # Get the root directory of the Git repository
 export ROOT_DIR=$(git rev-parse --show-toplevel)
 
-pip freeze | grep -v "@" | cut -d '=' -f 1,3 > python-requirements.txt
+pip freeze | grep -v "@" > python-requirements.txt
